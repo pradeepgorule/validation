@@ -1,0 +1,38 @@
+1) validation for Number only :-
+  
+	<input type="text" onkeypress="javascript:return isNumber(event)">
+
+ function isNumber(evt) {
+        var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+        if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+            return false;
+
+        
+    }    
+
+
+
+2) validation for date : -
+	
+	<input type="date" min="1990-01-01" max="2000-12-31">
+
+3) validation for String :-
+
+
+			function isString(evt)
+{
+	var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+	if ((iKeyCode < 65 || iKeyCode > 96) && (iKeyCode < 97 || iKeyCode > 123)&&
+	iKeyCode != 32 && iKeyCode !=8  ) {
+		 return false;
+	}
+}
+   
+   <input type="text" name="name" id="name" onkeypress="javascript:return isString(event)">
+
+
+
+
+
+
+
