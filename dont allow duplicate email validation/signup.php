@@ -1,5 +1,5 @@
 <?php
-
+//create database named as demo and create table  named as signup wth 3 fields name,email and add .
 $servername = "localhost";
 $username = "root";
 $password = "";
